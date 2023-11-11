@@ -1,5 +1,14 @@
 <!--pages/success/success.wxml-->
 <view>
+  <div class="wrap-top">
   <icon type="success" size="60"/>
-  <text size="20px">连接成功</text>
+  <text size="20px">连接成功！</text>
+  </div>
+  <div class="wrap-div">
+    <text>公众号：</text>
+  </div>
+  <div class="wrap-div">
+    <official-account></official-account>
+  </div>
+  
 </view>

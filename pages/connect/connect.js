@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    ssid: 'WiFi名称',
+    ssid: 'China OSTB Wireless',
     bssid: '设备MAC',
     password: '密码'
   },
@@ -79,7 +79,7 @@ Page({
     const that = this;
     wx.showModal({
       title: '连接失败',
-      content: res.errMsg,
+      content: "请耐心等待1分钟左右会自动连接，如无自动连接，请复制密码，进行连接。" + res.errMsg,
       confirmText: '复制密码',
       success (res) {
         if (res.confirm) {
@@ -93,7 +93,8 @@ Page({
           title: res.errMsg,
         })
       }
-    });
+    }
+    );
   },
 
   /**

@@ -1,6 +1,17 @@
 <!--pages/connect/connect.wxml-->
 <view>
-  <image src="/images/icon_wifi.png" mode="aspectFit"></image>
-  <text>WiFi名称：{{ssid}}</text>
-  <button bindtap="connectWifi">点击连接</button>
+  <div class="image-container">
+  <image src="/images/wifi.png" class="image" mode="aspectFit"></image>
+  <image src="/images/logo.png" class="image" mode="aspectFit"></image>
+  </div>  
+  <text class="blue-bold-text">微信扫码连WiFi</text>
+  <text class="no-wrap-text">连接原点科技内网可享受以下服务</text>
+  <div class="image-container"> 
+  <image src="/images/Lan_server.png" class="image2" mode="aspectFit"></image>
+  </div>  
+  <text class="wifi-connect">WiFi名称：{{ssid}}</text>
+  <button bindtap="connectWifi" class="custom-button">点击连接</button>
+  <div class="boom-text">
+  <text>Powered by Amnghy Tian</text>
+  </div>
 </view>
